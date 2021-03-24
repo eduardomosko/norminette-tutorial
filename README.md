@@ -277,8 +277,9 @@ Essas coisas falam de structs, mas se aplicam à todos esses.
 
 - Não pode declarar struct em um arquivo *.c, só pode em um *.h
 - Tem que haver apenas tabs entre `struct` e o nome da struct
-- Se for fazer um typedef da struct, ele deve ter um nome que começa com t_ e está alinhado por tabs ao nome original
 - Todos os nomes de membros da struct tem que estar alinhados usando tabs
+- Se for fazer um typedef da struct, ele deve ter um nome que começa com t_ e está alinhado por tabs ao nome original
+- No exemplo não parece que está alinhado, mas a Norma diz especificamente que o tab deve ter 4 colunas, mas o github usa 8
 
 ## Pre-processador
 - Todas as diretivas de processador entre um #if (e equivalente) e #endif dever estar identados com um espaço entre o # e a diretiva.
