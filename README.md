@@ -249,8 +249,7 @@ int	main(void)
 ** Returns the sum of a and b
 */
 
-int
-	sum(int a, int b)
+int	sum(int a, int b)
 {
 	return (a + b);
 }
