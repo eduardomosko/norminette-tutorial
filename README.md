@@ -93,7 +93,7 @@ int main()
 
 - Erro (linha 3): Espaço antes do nome da função
 
-Basta adicionar uma tabulação (tab) antes do nome da função e depois do tipo de retorno. Tome cuidado ao copiar o codigo direto daqui, tente sempre digitar, para evitar erros.
+Basta trocar o espaço por uma tabulação (tab) antes do nome da função e depois do tipo de retorno. Tome cuidado ao copiar o codigo direto daqui, tente sempre digitar, para evitar erros.
 
 ```c
 int	main()
