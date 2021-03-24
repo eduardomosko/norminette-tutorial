@@ -231,8 +231,8 @@ Arquivo `test.c`
 #include <stdio.h>
 #include "test.h"
 
-int g_int = 1;
-char g_char = 'b';
+int g_int;
+char g_char;
 
 int
 	main(void)
@@ -240,6 +240,8 @@ int
 	int i;
 	int j;
 
+	g_int = 1;
+	g_char = 'b';
 	i = 0;
 	while (i < 10)
 	{
