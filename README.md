@@ -54,7 +54,7 @@ Então vamos analisar erro por erro.
 
 - Erro: o cabeçalho 42 não está no topo do arquivo
 
-Colocar o cabeçalho pode ser feito com `f2` pelo vim ou CTRL+ALT+H ou CMD+ALT+H pelo editor normal. Uma coisa importante de saber é que se você não deixar uma linha em branco entre o cabeçalho e os includes, o editor vai deletar os conteúdos daquela linha sem te avisar.
+Colocar o cabeçalho pode ser feito com `f2` pelo vim ou `Ctrl+Alt+H` pelo editor normal. Uma coisa importante de saber é que se você não deixar uma linha em branco entre o cabeçalho e os includes, o editor vai deletar os conteúdos daquela linha sem te avisar.
 
 - Erro: o arquivo deve terminar com uma única linha vazia
 - Erro (linha 3, coluna 11): sem nova linha antes do bloco
