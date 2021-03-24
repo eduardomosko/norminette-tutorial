@@ -52,13 +52,15 @@ Erro (linha 6, coluna 0): sem nova linha após o bloco
 
 Então vamos analisar erro por erro.
 
-- Erro: o cabeçalho 42 não está no topo do arquivo
+> Erro: o cabeçalho 42 não está no topo do arquivo
 
 Colocar o cabeçalho pode ser feito com `f2` pelo vim e `Ctrl+Alt+H` ou `CMD+Alt+H` pelo editor normal. Uma coisa importante de saber é que se você não deixar uma linha em branco entre o cabeçalho e os includes, o editor vai deletar os conteúdos daquela linha sem te avisar.
 
-- Erro: o arquivo deve terminar com uma única linha vazia
-- Erro (linha 3, coluna 11): sem nova linha antes do bloco
-- Erro (linha 6, coluna 0): sem nova linha após o bloco 
+> Erro: o arquivo deve terminar com uma única linha vazia
+>
+> Erro (linha 3, coluna 11): sem nova linha antes do bloco
+>
+> Erro (linha 6, coluna 0): sem nova linha após o bloco 
 
 Vamos resolver esses três erros juntos por que eles são muito parecidos, todos eles falam pra colocar um `enter` extra em alguns lugares. O primeiro diz pra você colocar um no final do arquivo, o segundo fala pra colocar antes do bloco (um bloco é o espaço entre um `{` e `}`) e o último pra colocar depois do bloco. No caso, colocar uma linha no final do arquivo resolve os primeiro e o último, já é o mesmo lugar. Dá pra saber se existe ou não uma última linha em branco se tiver um último número seguido de espaço em branco no editor de texto. Tipo assim:
 
@@ -91,7 +93,7 @@ int main()
 
 ```
 
-- Erro (linha 3): Espaço antes do nome da função
+> Erro (linha 3): Espaço antes do nome da função
 
 Basta trocar o espaço por uma tabulação (tab) antes do nome da função e depois do tipo de retorno. Tome cuidado ao copiar o codigo direto daqui, tente sempre digitar, para evitar erros.
 
@@ -104,7 +106,7 @@ int	main()
 
 ```
 
-- Erro (linha 3): falta vazio na função principal
+> Erro (linha 3): falta vazio na função principal
 
 A tradução deixou essa meio estranha. O original fala que falta `void` no `main`. Void é uma palavra chave que indica ausência de tipos, ou ausência de argumentos pra uma função. Devemos coloca-lá para indicar que `main` não recebe parametros.
 
@@ -117,7 +119,7 @@ int	main(void)
 
 ```
 
-- Erro (linha 5, col 8): parênteses ausentes na declaração de retorno
+> Erro (linha 5, col 8): parênteses ausentes na declaração de retorno
 
 Temos que colocar as variáveis/literais que queromos retornar de uma função entre parênteses.
 
@@ -256,7 +258,7 @@ int	sum(int a, int b)
 
 ```
 
-# Funções
+## Funções
 - Tem que colocar as coisas que você quer retornar dentre parênteses
 - Tem que ser declarada desse jeito aí especificamente
 
@@ -278,5 +280,5 @@ Essas coisas falam de structs, mas se aplicam à todos esses.
 ## Pre-processador
 - Todas as diretivas de processador entre um #if (e equivalente) e #endif dever estar identados com um espaço entre o # e a diretiva.
 
-# Arquivo .h
-- Tem que ter o escopo global alinhado por tabs, ou seja o nome das funções, uniões, structs e tudo mais tem que estar alinhado.
+## Arquivo .h
+- Tem que ter o escopo global alinhado por tabs, ou seja: o nome das funções, uniões, structs e tudo mais tem que estar alinhado.
