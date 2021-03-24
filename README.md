@@ -93,13 +93,10 @@ int main()
 
 - Erro (linha 3): Espaço antes do nome da função
 
-Esse erro foi chato de entender porque ele não conta a história toda. Afinal tem um espaço antes do nome da função, mas se eu tirar ele o programa não vai compilar.
-
-A resposta é que na verdade a declaração inteira que têm que ser diferente. O tipo de retorno deve ficar sozinho em uma linha e o nome da função e lista de parametros na próxima, com um tab no início.
+Basta adicionar uma tabulação (tab) antes do nome da função e depois do tipo de retorno. Tome cuidado ao copiar o codigo direto daqui, tente sempre digitar, para evitar erros.
 
 ```c
-int
-	main()
+int	main()
 {
 	printf("Hello, World!\n");
 	return 0;
@@ -112,8 +109,7 @@ int
 A tradução deixou essa meio estranha. O original fala que falta `void` no `main`. Void é uma palavra chave que indica ausência de tipos, ou ausência de argumentos pra uma função. Devemos coloca-lá para indicar que `main` não recebe parametros.
 
 ```c
-int
-	main(void)
+int	main(void)
 {
 	printf("Hello, World!\n");
 	return 0;
@@ -126,8 +122,7 @@ int
 Temos que colocar as variáveis/literais que queromos retornar de uma função entre parênteses.
 
 ```c
-int
-	main(void)
+int	main(void)
 {
 	printf("Hello, World!\n");
 	return (0);
@@ -152,8 +147,7 @@ Então o "Olá, Mundo" aprovado pela Norminette fica assim:
 
 #include <stdio.h>
 
-int
-	main(void)
+int	main(void)
 {
 	printf("Hello, World!\n");
 	return (0);
@@ -208,7 +202,7 @@ typedef union	u_union
 	t_struct	s;
 }				t_union;
 
-int				sum(int a, int b);
+int	sum(int a, int b);
 
 #endif
 
@@ -234,8 +228,7 @@ Arquivo `test.c`
 int g_int;
 char g_char;
 
-int
-	main(void)
+int	main(void)
 {
 	int i;
 	int j;
