@@ -6,7 +6,7 @@ Licensa: [The Unlicense](https://unlicense.org/), escrito por Eduardo Mosko
 
 A Norminette é o programa que vai checar nossos programas para garantir que eles se adequam a norma da 42. Toda a avaliação vai começar rodando ela e se ela identificar um errinho se quer, pode dar tchau pra sua nota nesse trabalho porque ela vai ser **zero**. Por isso fui entender exatamento o que ela aceita ou não e escrevi esse "guia" que tem exemplos e explica como entender e aplicar as mensagens de erro da Norminette.
 
-Tem dois exemplos: um para [iniciantes](#Olá, Mundo) que tem bem pouco código e explora as mensagens de erro da Norminette e outro mais complexo pra quem já tem [experiência](#Exemplo mais complexo) e só quer saber como vai ter que escrever aqui na 42.
+Tem dois exemplos: um para [iniciantes](#Olá,_Mundo) que tem bem pouco código e explora as mensagens de erro da Norminette e outro mais complexo pra quem já tem [experiência](#Exemplo_mais_complexo) e só quer saber como vai ter que escrever aqui na 42.
 
 Se você percebeu alguma coisa que não foi incluida aqui sinta-se livre pra mandar mensagem que eu testo e adiciono a explicação aqui (meu nome na intra/discord é *emendes-*), ou pode mandar um pull-request direto com a alteração.
 
