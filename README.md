@@ -4,14 +4,14 @@ Aviso: Este não é um documento oficial da 42, foi escrito por um camper curios
 
 Licensa: [The Unlicense](https://unlicense.org/), escrito por Eduardo Mosko
 
-A Norminette é o programa que vai checar nossos programas para garantir que eles se adequam a norma da 42. Toda a avaliação vai começar rodando ela e se ela identificar um errinho se quer, pode dar tchau pra sua nota nesse trabalho porque ela vai ser **zero**. Por isso fui entender exatamento o que ela aceita ou não e escrevi esse "guia" que tem exemplos e explica como entender e aplicar as mensagens de erro da Norminette.
+A Norminette, ou norma, é o programa que vai checar nossos programas para garantir que eles se adequem à norma da 42. Toda a avaliação vai começar rodando a norma e se ela identificar um errinho se quer, pode dar tchau pra sua nota nesse trabalho - ela vai ser **zero**. Por isso fui entender exatamente o que ela aceita ou não e escrevi este "guia" que tem exemplos e explica como entender e aplicar as mensagens de erro da Norminette.
 
 Tem dois exemplos: um para [iniciantes](#olá-mundo) que tem bem pouco código e explora as mensagens de erro da Norminette e outro mais complexo pra quem já tem [experiência](#exemplo-mais-complexo) e só quer saber como vai ter que escrever aqui na 42.
 
-Se você percebeu alguma coisa que não foi incluida aqui sinta-se livre pra mandar mensagem que eu testo e adiciono a explicação aqui (meu nome na intra/discord é *emendes-*), ou pode mandar um pull-request direto com a alteração.
+Se você percebeu alguma coisa que não foi incluida neste guia sinta-se livre pra mandar mensagem que eu testo e adiciono a explicação aqui (meu nome na intra/discord é *emendes-*), ou pode mandar um pull-request direto com a alteração.
 
 
-# Olá, Mundo
+# Olá, Mundo!
 
 Vamos partir desse programa e fazer ele ser aceito pela Norminnete.
 
@@ -50,7 +50,7 @@ Erro (linha 5, col 8): parênteses ausentes na declaração de retorno
 Erro (linha 6, coluna 0): sem nova linha após o bloco 
 ```
 
-Então vamos analisar erro por erro.
+Então, vamos analisar erro por erro.
 
 > Erro: o cabeçalho 42 não está no topo do arquivo
 
@@ -108,7 +108,7 @@ int	main()
 
 > Erro (linha 3): falta vazio na função principal
 
-A tradução deixou essa meio estranha. O original fala que falta `void` no `main`. Void é uma palavra chave que indica ausência de tipos, ou ausência de argumentos pra uma função. Devemos coloca-lá para indicar que `main` não recebe parametros.
+A tradução deixou essa meio estranha. O original fala que falta `void` no `main`. Void é uma palavra chave que indica ausência de tipos, ou ausência de argumentos pra uma função. Devemos coloca-lá para indicar que `main` não recebe parâmetros.
 
 ```c
 int	main(void)
@@ -121,7 +121,7 @@ int	main(void)
 
 > Erro (linha 5, col 8): parênteses ausentes na declaração de retorno
 
-Temos que colocar as variáveis/literais que queromos retornar de uma função entre parênteses.
+Temos que colocar as variáveis/literais que queremos retornar de uma função entre parênteses.
 
 ```c
 int	main(void)
@@ -132,7 +132,7 @@ int	main(void)
 
 ```
 
-Então o "Olá, Mundo" aprovado pela Norminette fica assim:
+Então o "Olá, Mundo!" aprovado pela Norminette fica assim:
 
 ```c
 /* ************************************************************************** */
@@ -157,18 +157,18 @@ int	main(void)
 
 ```
 
-Podemos garantir que realmente arrumamos tudo checando mais uma vez.
+Podemos garantir que realmente arrumamos tudo, checando mais uma vez.
 
 ```bash
 $ norminette olamundo.c 
 Norme: ./olamundo.c
 ```
 
-E isso aí!
+É isso aí!
 
 # Exemplo mais complexo
 
-Esse exemplo é pra quem já têm alguma experiência com C e só quer ver os detalhes de como vai ter que escrever aqui na 42. Aqui tá o exemplo de código que fui usando pra testar a Norminette e assim que ele fica 100% aceito e no final tem uma lista das coisas que tem que ser feitas de um jeito especifico, mas esse jeito não é explicado na Norma.
+Esse exemplo é pra quem já têm alguma experiência com C e só quer ver os detalhes de como vai ter que escrever na 42. Aqui tá o exemplo de código que fui usando pra testar a Norminette e assim que ele fica 100% aceito e no final tem uma lista das coisas que tem que ser feitas de um jeito específico, mas esse jeito não é explicado na Norma.
 
 Arquivo `test.h`
 ```c
@@ -260,16 +260,16 @@ int	sum(int a, int b)
 
 ## Funções
 - Tem que colocar as coisas que você quer retornar dentre parênteses
-- Tem que ser declarada desse jeito aí especificamente
+- Tem que declarar desse jeito aí especificamente
 
 ## Comentários
-- O comentário tem que comecar com ** em todas as linhas intermediarias
+- O comentário tem que começar com ** em todas as linhas intermediárias
 - O comentário tem que ter pelo menos uma linha intermediária
 - Só pode escrever texto no comentário nas linhas intermediárias
 
 ## Structs, Enums e Unions
 
-Essas coisas falam de structs, mas se aplicam à todos esses.
+Essas coisas falam de structs, mas se aplicam a todos esses.
 
 - Não pode declarar struct em um arquivo *.c, só pode em um *.h
 - Tem que haver apenas tabs entre `struct` e o nome da struct
